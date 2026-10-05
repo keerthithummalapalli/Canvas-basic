@@ -13,7 +13,6 @@ A lightweight, browser-based drawing application for creating, editing, saving, 
 <p align="center">
   <img src="./screenshots/canvas-preview2.png" alt="Canvas Draw Studio interface" width="800">
 </p>
-
 ---
 
 ## Overview
