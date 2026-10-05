@@ -1,65 +1,103 @@
 # Canvas Draw Studio
 
-A browser-based interactive drawing application built with React, Vite, and Tailwind CSS.
+A lightweight, browser-based drawing application for creating, editing, saving, and exporting digital sketches through an interactive canvas interface.
+
+---
+
+## Application Preview
+
+<p align="center">
+  <img src="./screenshots/Canvas-preview.png" alt="Canvas Draw Studio" width="800">
+</p>
+
+<p align="center">
+  <img src="./screenshots/canvas-preview2.png" alt="Canvas Draw Studio interface" width="800">
+</p>
+
+---
+
+## Overview
+
+Canvas Draw Studio provides a focused drawing workspace built around the HTML Canvas API. The application supports freehand drawing, basic shapes, color and brush controls, drawing history, local persistence, and PNG export.
+
+The project is designed as a client-side application with no backend dependency.
+
+---
 
 ## Features
 
-- Drawing canvas using HTML5 Canvas API
-- Toolbar with Pen, Eraser, Line, and Rectangle tools
-- Color picker for stroke color selection
-- Brush size slider
-- Clear canvas button
-- Undo last drawing action
-- Save current drawing to Local Storage
-- Gallery of saved drawings
-- Load saved drawings onto the canvas
-- Export current canvas as PNG
-- `window.getCanvasDataURL()` available for verification
+- Freehand drawing with adjustable brush size
+- Pen and eraser tools
+- Line and rectangle drawing
+- Custom stroke color selection
+- Undo support
+- Canvas clearing
+- Local Storage-based drawing persistence
+- Saved drawing gallery
+- Loading previously saved drawings
+- PNG export
 
-## Required Test Attributes
+---
 
-- `canvas[data-testid="drawing-canvas"]`
-- `button[data-testid="tool-pen"]`
-- `button[data-testid="tool-eraser"]`
-- `button[data-testid="tool-line"]`
-- `button[data-testid="tool-rectangle"]`
-- `input[type="color"][data-testid="color-picker"]`
-- `input[type="range"][data-testid="brush-size-slider"]`
-- `button[data-testid="clear-canvas-button"]`
-- `button[data-testid="undo-button"]`
-- `button[data-testid="save-storage-button"]`
-- `button[data-testid="export-png-button"]`
-- `div[data-testid="gallery-container"]`
-- `button[data-testid="gallery-item-0"]`
+## Technology
 
-## Setup
+**Frontend**
+- React
+- JavaScript
+- Vite
+- Tailwind CSS
 
-1. Install dependencies
+**Browser APIs**
+- HTML Canvas API
+- Web Storage API
+
+---
+
+## Getting Started
+
+### Requirements
+
+- Node.js
+- npm
+
+### Installation
 
 ```bash
+git clone https://github.com/keerthithummalapalli/Canvas-basic.git
+cd Canvas-basic
 npm install
-```
 
-2. Start development server
+Development
 
-```bash
 npm run dev
-```
 
-3. Build for production
+The development server will provide a local URL in the terminal.
 
-```bash
+Production Build
+
 npm run build
-```
 
-4. Preview production build
+To preview the production build locally:
 
-```bash
 npm run preview
-```
 
-## Notes
 
-- Drawings saved via the `Save to Storage` button are persisted under the `savedDrawings` Local Storage key.
-- The gallery loads saved drawings automatically when the page is refreshed.
-- `window.getCanvasDataURL()` returns the current PNG data URL of the canvas.
+---
+
+Project Structure
+
+Canvas-basic/
+├── public/
+├── src/
+├── screenshots/
+│   ├── Canvas-preview.png
+│   └── canvas-preview2.png
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+
+
